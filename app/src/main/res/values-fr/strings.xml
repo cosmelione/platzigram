@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_username">Nom d\'utilisateur</string>
+    <string name="login_name">Nom</string>
+    <string name="login_password">Mot de passe</string>
+    <string name="desc_logo">Logo de l\'application</string>
+    <string name="login_button">Connectez-vous</string>
+    <string name="textRegister"><b>Avez-vous un compte?</b></string>
+    <string name="textLinkRegister"><b><u>Enregistrez-vous ici</u></b></string>
+    <string name="galery">Galerie</string>
+    <string name="registerLabel">Créer un compte</string>
+    <string name="exampleName">Juan Sopale</string>
+    <string name="exampleTimeAgo">Hace 4 días</string>
+    <string name="exampleLikesText">10 me gusta</string>
+    <string name="home_bottom_nav">Accueil</string>
+    <string name="search_bottom_nav">Chercher</string>
+    <string name="profile_bottom_nav">Profil</string>
+    <string name="login_password_confirm">Confirmer mot de passe</string>
+    <string name="login_button_register">Enregistrez-vous</string>
+    <string name="login_email">Courrier électronique</string>
+
+    <string name="photo_details_title">Photo</string>
+
+    <string name="timeAgoCard">Il y a %d jours</string>
+    <string name="todayTextCard">Aujourd\'hui</string>
+    <string name="yesterdayTextCard">Hier</string>
+    <string name="likesTextCard">%1$d j\'aime</string>
+</resources>

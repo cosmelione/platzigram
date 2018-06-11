@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pictureCardview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heightCardview"
+    android:layout_marginBottom="@dimen/marginBottomFromCard">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/bgImageCardview"
+            android:src="@drawable/female_lion"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/marginBottomFromCard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNameCard"
+                android:text="@string/exampleName"
+                android:textSize="@dimen/textNameCard"
+                android:textColor="@color/textLight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textTimeAgoCard"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_marginTop="@dimen/marginTopFromCard"
+                android:layout_marginStart="@dimen/paddingLeftRight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTimeAgoCard"
+                android:text="@string/exampleTimeAgo"
+                android:textSize="@dimen/standard"
+                android:textColor="@color/textLight"
+                app:layout_constraintStart_toStartOf="@id/textNameCard"
+                app:layout_constraintTop_toBottomOf="@id/textNameCard"
+                app:layout_constraintBottom_toTopOf="@id/checkboxImageCard"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkboxImageCard"
+                app:layout_constraintStart_toStartOf="@id/textNameCard"
+                app:layout_constraintTop_toBottomOf="@id/textTimeAgoCard"
+                android:layout_marginTop="@dimen/marginTopFromCard"
+                app:layout_constraintEnd_toStartOf="@id/likesTextCard"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:button="@drawable/selector_heart" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likesTextCard"
+                app:layout_constraintStart_toEndOf="@id/checkboxImageCard"
+                app:layout_constraintTop_toTopOf="@id/checkboxImageCard"
+                android:text="@string/exampleLikesText"
+                android:textSize="@dimen/standard"
+                android:textColor="@color/textLight"/>
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Platzigram</string>
+    <string name="login_username">Nombre de usuario</string>
+    <string name="login_name">Nombre</string>
+    <string name="login_password">Contraseña</string>
+    <string name="desc_logo">Logo de la aplicación</string>
+    <string name="login_button">Conectarse</string>
+    <string name="textRegister"><b>¿Tienes cuenta?</b></string>
+    <string name="textLinkRegister"><b><u>Regístrate aquí</u></b></string>
+    <string name="galery">Galería</string>
+    <string name="registerLabel">Crear cuenta</string>
+    <string name="exampleName">Juan Sopale</string>
+    <string name="exampleTimeAgo">Hace 10 días</string>
+    <string name="exampleLikesText">10 me gusta</string>
+
+    <string name="timeAgoCard">Hace %d días</string>
+    <string name="todayTextCard">Hoy</string>
+    <string name="yesterdayTextCard">Ayer</string>
+    <string name="likesTextCard">%1$d me gusta</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_bottom_nav">Inicio</string>
+    <string name="search_bottom_nav">Buscar</string>
+    <string name="profile_bottom_nav">Perfil</string>
+    <string name="login_password_confirm">Confirmar contraseña</string>
+    <string name="login_button_register">Registrarse</string>
+    <string name="login_email">Correo electrónico</string>
+
+    <string name="photo_details_title">Foto</string>
+
+    <string name="ProfileFragment">com.cosmelione.platzigram.views.fragments.ProfileFragment</string>
+    <string name="SearchFragment">com.cosmelione.platzigram.views.fragments.SearchFragment</string>
+    <string name="HomeFragment">com.cosmelione.platzigram.views.fragments.HomeFragment</string>
+
+</resources>

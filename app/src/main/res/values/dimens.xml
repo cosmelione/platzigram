@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopFrom">48dp</dimen>
+    <dimen name="marginTopFromLess">32dp</dimen>
+    <dimen name="marginLeftRight">8dp</dimen>
+    <dimen name="paddingLeftRight">16dp</dimen>
+    <dimen name="chainMargin">2dp</dimen>
+    <dimen name="standard">16sp</dimen>
+    <dimen name="textNameCard">22sp</dimen>
+    <dimen name="borderCardView">10dp</dimen>
+    <dimen name="elevationCardView">@dimen/borderCardView</dimen>
+    <dimen name="heightCardview">200dp</dimen>
+    <dimen name="marginTopFromCard">10dp</dimen>
+    <dimen name="marginBottomFromCard">20dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="shrine_toolbar_offset_start">45dp</dimen>
+    <dimen name="shrine_toolbar_offset_top">15dp</dimen>
+    <dimen name="shrine_toolbar_image_offset_top">20dp</dimen>
+    <dimen name="shrine_toolbar_collapsed_height">200dp</dimen>
+    <dimen name="text_name_photo_details">22sp</dimen>
+    <dimen name="text_title_photo_details">29sp</dimen>
+    <dimen name="likes_text_photo_details">15sp</dimen>
+    <dimen name="desc_text_photo_details">18sp</dimen>
+    <dimen name="one">0.8dp</dimen>
+    <dimen name="bottom_nav_elevation">16dp</dimen>
+    <dimen name="height_appbar_photo_detail">250dp</dimen>
+    <dimen name="text_size_username_profile">30dp</dimen>
+    <dimen name="margin_top_circle_image_profile">20dp</dimen>
+    <dimen name="elevation_circle_image_profile">10dp</dimen>
+    <dimen name="round_profile_image">100dp</dimen>
+    <dimen name="grid_span">5dp</dimen>
+</resources>

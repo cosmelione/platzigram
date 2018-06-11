@@ -1,0 +1,110 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardViewStyle">@style/CardViewCustomStyle</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="itemBackground">@color/bottom_nav_color</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="paddingStart">@dimen/paddingLeftRight</item>
+        <item name="paddingEnd">@dimen/paddingLeftRight</item>
+    </style>
+
+    <!--<style name="TabLayoutStyle" parent="Widget.Design.TabLayout">-->
+        <!--&lt;!&ndash;<item name="tabMaxWidth">@dimen/tab_max_width</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="tabIndicatorColor">@color/pink</item>&ndash;&gt;-->
+        <!--<item name="tabIndicatorHeight">2dp</item>-->
+        <!--<item name="tabPaddingStart">8dp</item>-->
+        <!--<item name="tabPaddingEnd">8dp</item>-->
+        <!--<item name="tabBackground">@color/colorPrimary</item>-->
+        <!--<item name="tabTextAppearance">@style/TabTextAppearance</item>-->
+        <!--<item name="tabSelectedTextColor">@android:color/white</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabTextAppearance" parent="TextAppearance.Design.Tab">-->
+        <!--<item name="android:textSize">@dimen/standard</item>-->
+        <!--<item name="android:textColor">@color/colorAccent</item>-->
+        <!--<item name="textAllCaps">false</item>-->
+    <!--</style>-->
+
+    <style name="Button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/textLight</item>
+        <item name="android:textSize">@dimen/standard</item>
+    </style>
+
+    <style name="EditTextForm" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textLight</item>
+        <item name="android:textColorHint">@color/textLight</item>
+        <item name="android:textColorPrimary">@color/textLight</item>
+        <item name="android:textColorHighlight">@color/textLight</item>
+        <item name="android:textColorLink">@color/textLight</item>
+        <item name="colorControlNormal">@color/textLight</item>
+        <item name="colorControlActivated">@color/textLight</item>
+        <item name="android:textSize">@dimen/standard</item>
+    </style>
+
+    <style name="EditTextFormDark" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:textColorHint">@color/textDark</item>
+        <item name="android:textColorPrimary">@color/textDark</item>
+        <item name="android:textColorHighlight">@color/textDark</item>
+        <item name="android:textColorLink">@color/textDark</item>
+        <item name="colorControlNormal">@color/textDark</item>
+        <item name="colorControlActivated">@color/textDark</item>
+        <item name="android:textSize">@dimen/standard</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CardViewCustomStyle" parent="CardView">
+        <item name="cardCornerRadius">@dimen/borderCardView</item>
+        <item name="cardElevation">@dimen/elevationCardView</item>
+        <item name="android:padding">@dimen/paddingLeftRight</item>
+        <!--<item name="cardBackgroundColor">@color/colorPrimary</item>-->
+        <!--<item name="android:previewImage"></item>-->
+    </style>
+
+
+    <style name="MyFloatingButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyFloatingButtonPrimary" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    
+    <!--<style name="Widget.Design.TextInputLayout" parent="AppTheme">-->
+        <!--<item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>-->
+        <!--<item name="errorTextAppearance">@style/AppTheme.TextErrorAppearance</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">-->
+        <!--&lt;!&ndash; Floating label appearance here &ndash;&gt;-->
+        <!--<item name="android:textColor">@color/colorAccent</item>-->
+        <!--<item name="android:textSize">20sp</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">-->
+        <!--&lt;!&ndash; Error message appearance here &ndash;&gt;-->
+        <!--<item name="android:textColor">#ff0000</item>-->
+        <!--<item name="android:textSize">20sp</item>-->
+    <!--</style>-->
+</resources>
