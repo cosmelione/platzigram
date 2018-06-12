@@ -4,5 +4,7 @@ public class LoginRepositoryImpl implements LoginRepository {
     @Override
     public void signIn(String username, String password) {
 
+        //
+
     }
 }
