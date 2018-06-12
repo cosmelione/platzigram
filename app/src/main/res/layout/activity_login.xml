@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".views.LoginActivity">
+    tools:context=".login.view.LoginActivity">
 
 
     <ImageView
@@ -51,29 +51,10 @@
         app:layout_constraintStart_toEndOf="@id/textRegister"
         app:layout_constraintBaseline_toBaselineOf="@+id/textRegister"/>
 
-    <!--<android.support.constraint.ConstraintLayout-->
-        <!--android:id="@+id/formContainer"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/imageLogo"-->
-        <!--android:layout_marginTop="48dp">-->
-
-        <!---->
-
-    <!--</android.support.constraint.ConstraintLayout>-->
-
-
-
-    <!--<android.support.constraint.Group-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/imageLogo"-->
-        <!--android:layout_marginTop="48dp"-->
-        <!--app:constraint_referenced_ids="username_layout,password_layout"/>-->
+    <ProgressBar
+        android:id="@+id/progressbar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </android.support.constraint.ConstraintLayout>

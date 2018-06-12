@@ -12,18 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".views.LoginActivity"
+            android:name=".login.view.LoginActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
             android:name=".views.CreateAccountActivity"
             android:label="@string/registerLabel"
-            android:parentActivityName=".views.LoginActivity"
+            android:parentActivityName=".login.view.LoginActivity"
             android:screenOrientation="portrait"> <!-- android:parentActivityName=".LoginActivity" -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.LoginActivity" />
+                android:value=".login.view.LoginActivity" />
         </activity>
         <activity android:name=".views.ContainerActivity" android:screenOrientation="portrait" />
         <activity android:name=".MainActivity" android:theme="@android:style/Theme.NoDisplay">

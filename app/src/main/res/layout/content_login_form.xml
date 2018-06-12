@@ -8,7 +8,7 @@
     android:layout_marginTop="@dimen/marginTopFrom"
     android:paddingStart="@dimen/paddingLeftRight"
     android:paddingEnd="@dimen/paddingLeftRight"
-    tools:context=".views.LoginActivity"
+    tools:context=".login.view.LoginActivity"
     tools:showIn="@layout/activity_login"
     app:layout_constraintTop_toBottomOf="@id/imageLogo"
     app:layout_constraintBottom_toTopOf="@+id/textRegister"
