@@ -5,6 +5,7 @@
     <string name="login_password">Mot de passe</string>
     <string name="desc_logo">Logo de l\'application</string>
     <string name="login_button">Connectez-vous</string>
+    <string name="login_error">Une erreur est survenue: %s</string>
     <string name="textRegister"><b>Avez-vous un compte?</b></string>
     <string name="textLinkRegister"><b><u>Enregistrez-vous ici</u></b></string>
     <string name="galery">Galerie</string>

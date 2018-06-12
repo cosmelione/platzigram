@@ -5,7 +5,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.transition.Fade;
 import android.support.transition.Slide;
-import android.support.v4.app.BundleCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,14 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.cosmelione.platzigram.R;
-import com.cosmelione.platzigram.views.fragments.HomeFragment;
-import com.cosmelione.platzigram.views.fragments.ProfileFragment;
 import com.cosmelione.platzigram.views.fragments.RootFragment;
-import com.cosmelione.platzigram.views.fragments.SearchFragment;
-
-import java.util.List;
-
-import static android.support.v4.app.FragmentManager.POP_BACK_STACK_INCLUSIVE;
 
 public class ContainerActivity extends AppCompatActivity {
 

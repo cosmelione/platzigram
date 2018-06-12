@@ -8,9 +8,9 @@ public interface LoginActivityView {
     void disableInputs();
     void showProgressBar();
     void hideProgressBar();
-    void loginError(String error);
-    void showCreateAccount(View view);
-    void goToWebsite(View view);
     void loginSuccess();
-    void loginError();
+    void loginError(String error);
+    void showCreateAccount();
+    void goToWebsite();
+
 }

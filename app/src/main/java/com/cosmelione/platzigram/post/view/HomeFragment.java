@@ -1,4 +1,4 @@
-package com.cosmelione.platzigram.views.fragments;
+package com.cosmelione.platzigram.post.view;
 
 
 import android.os.Bundle;
@@ -91,32 +91,6 @@ public class HomeFragment extends Fragment {
 
         return rootView;
     }
-
-
-//    private int getSelectedItem(BottomNavigationView bottomNavigationView){
-//        Menu menu = bottomNavigationView.getMenu();
-//        for (int i=0;i<bottomNavigationView.getMenu().size();i++){
-//            MenuItem menuItem = menu.getItem(i);
-//            if (menuItem.isChecked()){
-//                return menuItem.getItemId();
-//            }
-//        }
-//        return 0;
-//    }
-//
-//    private String getTag (int id) {
-//        switch (id) {
-//            case R.id.home_menu_item:
-//                return getString(R.string.HomeFragment);
-//            case R.id.search_menu_item:
-//                return getString(R.string.SearchFragment);
-//            case R.id.profile_menu_item:
-//                return getString(R.string.ProfileFragment);
-//            default:
-//                return "";
-//        }
-//    }
-
 
 
 }

@@ -3,7 +3,6 @@ package com.cosmelione.platzigram.views.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.transition.Explode;
 import android.support.transition.Fade;
 import android.support.v4.app.Fragment;
@@ -12,11 +11,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.cosmelione.platzigram.R;
-
-import java.util.List;
+import com.cosmelione.platzigram.post.view.HomeFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,7 +25,7 @@ public class RootFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_FRAGMENT = "ID_FRAGMENT";
 
-    public static final String HOME = "com.cosmelione.platzigram.views.fragments.HomeFragment";
+    public static final String HOME = "com.cosmelione.platzigram.post.view.HomeFragment";
     public static final String SEARCH = "com.cosmelione.platzigram.views.fragments.SearchFragment";
     public static final String PROFILE = "com.cosmelione.platzigram.views.fragments.ProfileFragment";
 
