@@ -34,5 +34,9 @@
     <string name="ProfileFragment">com.cosmelione.platzigram.views.fragments.ProfileFragment</string>
     <string name="SearchFragment">com.cosmelione.platzigram.views.fragments.SearchFragment</string>
     <string name="HomeFragment">com.cosmelione.platzigram.views.fragments.HomeFragment</string>
+    <string name="text_title_post_picture">Título</string>
+    <string name="text_description_post_picture">Descripción</string>
+    <string name="text_post_button">Publicar</string>
+    <string name="text_cancel_button">Cancelar</string>
 
 </resources>
