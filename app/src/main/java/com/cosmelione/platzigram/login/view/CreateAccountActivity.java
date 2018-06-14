@@ -1,4 +1,4 @@
-package com.cosmelione.platzigram.views;
+package com.cosmelione.platzigram.login.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

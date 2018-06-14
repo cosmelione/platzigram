@@ -8,6 +8,7 @@
     <uses-feature android:name="android.hardware.camera2.CameraDevice" android:required="false"/>
 
     <application
+        android:name=".PlatzigramApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
@@ -18,7 +19,7 @@
             android:name=".login.view.LoginActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".views.CreateAccountActivity"
+            android:name=".login.view.CreateAccountActivity"
             android:label="@string/registerLabel"
             android:parentActivityName=".login.view.LoginActivity"
             android:screenOrientation="portrait"> <!-- android:parentActivityName=".LoginActivity" -->

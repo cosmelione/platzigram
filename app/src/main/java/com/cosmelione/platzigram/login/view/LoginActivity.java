@@ -16,7 +16,6 @@ import com.cosmelione.platzigram.R;
 import com.cosmelione.platzigram.login.presenter.LoginPresenter;
 import com.cosmelione.platzigram.login.presenter.LoginPresenterImpl;
 import com.cosmelione.platzigram.views.ContainerActivity;
-import com.cosmelione.platzigram.views.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginActivityView {
 
