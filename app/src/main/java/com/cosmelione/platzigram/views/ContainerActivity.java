@@ -21,7 +21,6 @@ import com.cosmelione.platzigram.login.view.LoginActivity;
 import com.cosmelione.platzigram.login.view.LoginActivityView;
 import com.cosmelione.platzigram.views.fragments.RootFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class ContainerActivity extends AppCompatActivity implements LoginActivityView {
 
@@ -45,7 +44,7 @@ public class ContainerActivity extends AppCompatActivity implements LoginActivit
         fragmentTransaction.commit();
 
 //        BottomNavigationView bottomNavigationView;
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        bottomNavigationView =  findViewById(R.id.bottomNavigationView);
         currentItem = bottomNavigationView.getSelectedItemId();
 
         BottomNavigationView.OnNavigationItemSelectedListener managerBehaviorClick = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -118,7 +117,7 @@ public class ContainerActivity extends AppCompatActivity implements LoginActivit
 
     private boolean replaceFragment(int itemId) {
 
-        String tagFragment = null;
+        String tagFragment;
         if (currentItem == itemId) {
 
             Bundle bundle = currentFragment.getArguments();
@@ -178,7 +177,7 @@ public class ContainerActivity extends AppCompatActivity implements LoginActivit
         return null;
     }
 
-    private void reselectedBottomNavItem(String item) {
+    /*private void reselectedBottomNavItem(String item) {
        if (item.equals(RootFragment.HOME)) {
            bottomNavigationView.getMenu().getItem(0).setChecked(true);
        }
@@ -188,7 +187,7 @@ public class ContainerActivity extends AppCompatActivity implements LoginActivit
        else {
            bottomNavigationView.getMenu().getItem(2).setChecked(true);
        }
-    }
+    }*/
 
     public String getLikesText(int likes) {
         return String.format(getString(R.string.likesTextCard), likes);

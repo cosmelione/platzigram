@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -18,24 +17,17 @@ import com.cosmelione.platzigram.R;
 import com.cosmelione.platzigram.login.presenter.LoginPresenter;
 import com.cosmelione.platzigram.login.presenter.LoginPresenterImpl;
 import com.cosmelione.platzigram.views.ContainerActivity;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
 
 public class LoginActivity extends AppCompatActivity implements LoginActivityView {
 
     private static final int RC_SIGN_IN = 9001;
 
-    private ImageView imageLogo;
     private TextInputEditText username;
     private TextInputEditText password;
     private Button buttonLogin;
     private ProgressBar progressBarLogin;
-    private TextView textLinkRegister;
     private LoginPresenter loginPresenter;
     private SignInButton signInButtonWithGoogle;
 
@@ -44,12 +36,12 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        imageLogo = findViewById(R.id.imageLogo);
+        ImageView imageLogo = findViewById(R.id.imageLogo);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.button_login);
         progressBarLogin = findViewById(R.id.progressbar_login);
-        textLinkRegister = findViewById(R.id.textLinkRegister);
+        TextView textLinkRegister = findViewById(R.id.textLinkRegister);
         signInButtonWithGoogle = findViewById(R.id.sign_in_with_google);
 
         loginPresenter = new LoginPresenterImpl(this);

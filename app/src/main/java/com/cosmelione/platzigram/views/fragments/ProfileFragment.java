@@ -4,7 +4,6 @@ package com.cosmelione.platzigram.views.fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,9 +23,6 @@ import java.util.List;
 public class ProfileFragment extends Fragment {
 
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
     private List<Picture> pictureList;
 
 
@@ -62,12 +58,11 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        mRecyclerView = rootView.findViewById(R.id.recycler_cards);
+        RecyclerView mRecyclerView = rootView.findViewById(R.id.recycler_cards);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
-        mLayoutManager = gridLayoutManager;
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new PictureCardAdapter(pictureList, R.layout.cardview_picture, getParentFragment());
+        mRecyclerView.setLayoutManager(gridLayoutManager);
+        RecyclerView.Adapter mAdapter = new PictureCardAdapter(pictureList, R.layout.cardview_picture, getParentFragment());
         mRecyclerView.setAdapter(mAdapter);
 
         return rootView;
