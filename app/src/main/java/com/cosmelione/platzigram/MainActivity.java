@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.cosmelione.platzigram.views.ContainerActivity;
 import com.cosmelione.platzigram.login.view.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 

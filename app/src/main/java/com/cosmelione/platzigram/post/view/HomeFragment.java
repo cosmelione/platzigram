@@ -36,11 +36,7 @@ public class HomeFragment extends Fragment {
 
 
     private static final int REQUEST_CAMERA = 1;
-    private FloatingActionButton fabCamera;
     private String mCurrentPhotoPath;
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
     private List<Picture> pictureList;
 
     public HomeFragment() {
@@ -60,7 +56,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void initDataset() {
-        pictureList = new ArrayList<Picture>();
+        pictureList = new ArrayList<>();
         String title = "Futuro";
         String description = "dhsdhsdhdshdhshdhdhsd sddhsshsdh dhsddhshhhhhhhhhh sdsudssdudusududuu usdsudssdsuudsdususd";
         Picture p = new Picture("https://pics.wikifeet.com/Alison-Brie-Feet-131712.jpg", "Alberto Garcia", Calendar.getInstance(), 9, title, description);
@@ -85,7 +81,7 @@ public class HomeFragment extends Fragment {
         ((ContainerActivity)getActivity()).setSupportActionBar(toolbar);
 
         //FAB
-        fabCamera = rootView.findViewById(R.id.fab_camera);
+        FloatingActionButton fabCamera = rootView.findViewById(R.id.fab_camera);
         fabCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,12 +91,11 @@ public class HomeFragment extends Fragment {
 
 
         // BEGIN_INCLUDE(initializeRecyclerView)
-        mRecyclerView = rootView.findViewById(R.id.recycler_cards);
+        RecyclerView mRecyclerView = rootView.findViewById(R.id.recycler_cards);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mLayoutManager = linearLayoutManager;
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new PictureCardAdapter(pictureList, R.layout.cardview_picture, getParentFragment());
+        mRecyclerView.setLayoutManager(linearLayoutManager);
+        RecyclerView.Adapter mAdapter = new PictureCardAdapter(pictureList, R.layout.cardview_picture, getParentFragment());
         mRecyclerView.setAdapter(mAdapter);
 
         return rootView;

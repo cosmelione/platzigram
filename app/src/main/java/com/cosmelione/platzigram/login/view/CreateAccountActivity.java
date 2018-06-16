@@ -16,7 +16,6 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
 
 
     private TextInputEditText name, email, username, password;
-    private Button buttonLogin;
     private SignUpPresenter signUpPresenter;
 
     @Override
@@ -31,7 +30,7 @@ public class CreateAccountActivity extends AppCompatActivity implements CreateAc
         email = findViewById(R.id.email);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        buttonLogin = findViewById(R.id.button_login);
+        Button buttonLogin = findViewById(R.id.button_login);
 
         signUpPresenter = new SignUpPresenterImpl(this);
 

@@ -140,17 +140,19 @@ public class RootFragment extends Fragment {
     private void createFragment() {
         Fragment fragment;
 
-        if (mFragment.equals(HOME)) {
-            fragment = new HomeFragment();
-        }
-        else if (mFragment.equals(SEARCH)) {
-            fragment = new SearchFragment();
-        }
-        else if (mFragment.equals(PROFILE)) {
-            fragment = new ProfileFragment();
-        }
-        else {
-            fragment = new HomeFragment();
+        switch (mFragment) {
+            case HOME:
+                fragment = new HomeFragment();
+                break;
+            case SEARCH:
+                fragment = new SearchFragment();
+                break;
+            case PROFILE:
+                fragment = new ProfileFragment();
+                break;
+            default:
+                fragment = new HomeFragment();
+                break;
         }
 
         FragmentManager fragmentManager = getChildFragmentManager();

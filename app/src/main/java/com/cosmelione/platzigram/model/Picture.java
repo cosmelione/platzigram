@@ -2,10 +2,6 @@ package com.cosmelione.platzigram.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.cosmelione.platzigram.views.ContainerActivity;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Picture implements Parcelable {
@@ -28,7 +24,7 @@ public class Picture implements Parcelable {
         this.description = description;
     }
 
-    protected Picture(Parcel in) {
+    private Picture(Parcel in) {
         imagePath = in.readString();
         username = in.readString();
         likesNumber = in.readInt();
@@ -52,9 +48,9 @@ public class Picture implements Parcelable {
         return imagePath;
     }
 
-    public void setImagePath(String imagePath) {
+    /*public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
-    }
+    }*/
 
     public String getUsername() {
         return username;
@@ -68,9 +64,9 @@ public class Picture implements Parcelable {
         return likesNumber;
     }
 
-    public void setLikesNumber(int likesNumber) {
+    /*public void setLikesNumber(int likesNumber) {
         this.likesNumber = likesNumber;
-    }
+    }*/
 
     public int getTimeAgo() {
         Calendar today = Calendar.getInstance();
