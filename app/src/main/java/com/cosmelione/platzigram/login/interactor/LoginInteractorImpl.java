@@ -1,6 +1,8 @@
 package com.cosmelione.platzigram.login.interactor;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.cosmelione.platzigram.R;
@@ -12,6 +14,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 public class LoginInteractorImpl implements LoginInteractor {
@@ -62,6 +65,19 @@ public class LoginInteractorImpl implements LoginInteractor {
             Log.w(TAG, "Google sign in failed", e);
             loginPresenter.loginError("Google sign in failed");
         }
+    }
+
+    @Override
+    public void signOut() {
+        loginRepository.signOut();
+        // Google sign out
+        googleSignInClient.signOut().addOnCompleteListener((Activity)loginPresenter.getContext(),
+                new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        loginPresenter.goBackToLogin();
+                    }
+                });
     }
 
 }

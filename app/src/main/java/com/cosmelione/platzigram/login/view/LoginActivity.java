@@ -152,5 +152,10 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
         startActivity(intent);
     }
 
+    @Override
+    public void goBackToLogin() {
+
+    }
+
 
 }

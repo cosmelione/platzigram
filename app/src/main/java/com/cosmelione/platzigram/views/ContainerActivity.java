@@ -1,6 +1,7 @@
 package com.cosmelione.platzigram.views;
 
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.transition.Fade;
@@ -10,16 +11,24 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cosmelione.platzigram.R;
+import com.cosmelione.platzigram.login.presenter.LoginPresenter;
+import com.cosmelione.platzigram.login.presenter.LoginPresenterImpl;
+import com.cosmelione.platzigram.login.view.LoginActivity;
+import com.cosmelione.platzigram.login.view.LoginActivityView;
 import com.cosmelione.platzigram.views.fragments.RootFragment;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class ContainerActivity extends AppCompatActivity {
+public class ContainerActivity extends AppCompatActivity implements LoginActivityView {
 
     private Fragment currentFragment;
     private int currentItem;
     private BottomNavigationView bottomNavigationView;
+    private LoginPresenter loginPresenter;
 
 
     @Override
@@ -55,6 +64,8 @@ public class ContainerActivity extends AppCompatActivity {
                 currentFragment = getVisibleFragment();
             }
         });
+
+        loginPresenter = new LoginPresenterImpl(this);
     }
 
 
@@ -81,7 +92,29 @@ public class ContainerActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_settings, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.sign_out_menu_item:
+                loginPresenter.signOut();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public void goBackToLogin() {
+        Intent intentHome = new Intent(this, LoginActivity.class);
+        startActivity(intentHome);
+        finish();
+    }
 
     private boolean replaceFragment(int itemId) {
 
@@ -175,6 +208,53 @@ public class ContainerActivity extends AppCompatActivity {
     private Fragment getVisibleFragment() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         return fragmentManager.findFragmentById(R.id.fragment_container);
+    }
+
+
+
+    @Override
+    public void enableInputs() {
+
+    }
+
+    @Override
+    public void disableInputs() {
+
+    }
+
+    @Override
+    public void showProgressBar() {
+
+    }
+
+    @Override
+    public void hideProgressBar() {
+
+    }
+
+    @Override
+    public void loginSuccess() {
+
+    }
+
+    @Override
+    public void loginError(String error) {
+
+    }
+
+    @Override
+    public void showCreateAccount() {
+
+    }
+
+    @Override
+    public void goToSignInWithGoogle(GoogleSignInClient googleSignInClient) {
+
+    }
+
+    @Override
+    public void goToWebsite() {
+
     }
 
 

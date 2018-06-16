@@ -15,4 +15,5 @@ public interface LoginActivityView {
 
     void goToWebsite();
 
+    void goBackToLogin();
 }

@@ -63,5 +63,12 @@ public class LoginRepositoryImpl implements LoginRepository {
 
     }
 
+    @Override
+    public void signOut() {
+        // Firebase sign out
+        firebaseAuth.signOut();
+
+    }
+
 
 }

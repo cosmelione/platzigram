@@ -30,4 +30,6 @@
     <string name="text_description_post_picture">Description</string>
     <string name="text_post_button">Publicar</string>
     <string name="text_cancel_button">Cancelar</string>
+
+    <string name="menu_sign_out">Déconnexion</string>
 </resources>

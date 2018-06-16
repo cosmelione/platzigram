@@ -16,4 +16,7 @@ public interface LoginPresenter {
     Context getContext();
 
 
+    void goBackToLogin();
+
+    void signOut();
 }

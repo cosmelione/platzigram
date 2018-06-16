@@ -61,6 +61,16 @@ public class LoginPresenterImpl implements LoginPresenter {
         return ((Activity) loginActivityView);
     }
 
+    @Override
+    public void goBackToLogin() {
+        loginActivityView.goBackToLogin();
+    }
+
+    @Override
+    public void signOut() {
+        loginInteractor.signOut();
+    }
+
 //    @Override
 //    public Context getContext() {
 //        return (Context) this.loginActivityView;

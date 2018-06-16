@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import com.cosmelione.platzigram.R;
 import com.cosmelione.platzigram.adapter.PictureCardAdapter;
 import com.cosmelione.platzigram.model.Picture;
+import com.cosmelione.platzigram.views.ContainerActivity;
 
 import java.io.File;
 import java.io.IOException;
@@ -81,6 +82,7 @@ public class HomeFragment extends Fragment {
         //Config toolbar
         Toolbar toolbar = rootView.findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.home_bottom_nav);
+        ((ContainerActivity)getActivity()).setSupportActionBar(toolbar);
 
         //FAB
         fabCamera = rootView.findViewById(R.id.fab_camera);
