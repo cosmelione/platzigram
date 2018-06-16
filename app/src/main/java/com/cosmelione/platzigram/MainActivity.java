@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.cosmelione.platzigram.views.ContainerActivity;
 import com.cosmelione.platzigram.login.view.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
 
         if (firebaseAuth.getCurrentUser() != null) {
+//            FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
+//            firebaseFirestore.collection("user").document().
              intent = new Intent(this, ContainerActivity.class);
         }
         else {
