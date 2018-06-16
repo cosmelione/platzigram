@@ -1,5 +1,6 @@
 package com.cosmelione.platzigram.login.repository;
 
+import android.app.Activity;
 import android.support.annotation.NonNull;
 
 import com.cosmelione.platzigram.login.presenter.LoginPresenter;
@@ -47,7 +48,7 @@ public class LoginRepositoryImpl implements LoginRepository {
 
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
         firebaseAuth.signInWithCredential(credential)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener((Activity) loginPresenter.getContext(), new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {

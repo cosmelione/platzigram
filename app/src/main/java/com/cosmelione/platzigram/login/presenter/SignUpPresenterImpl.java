@@ -1,5 +1,8 @@
 package com.cosmelione.platzigram.login.presenter;
 
+import android.app.Activity;
+import android.content.Context;
+
 import com.cosmelione.platzigram.login.interactor.SignUpInteractor;
 import com.cosmelione.platzigram.login.interactor.SignUpInteractorImpl;
 import com.cosmelione.platzigram.login.view.CreateAccountActivityView;
@@ -27,6 +30,11 @@ public class SignUpPresenterImpl implements SignUpPresenter {
     @Override
     public void createAccountError() {
         createAccountActivityView.createAccountError();
+    }
+
+    @Override
+    public Context getContext() {
+        return (Activity) createAccountActivityView;
     }
 
 

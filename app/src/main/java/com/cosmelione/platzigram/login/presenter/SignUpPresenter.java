@@ -8,6 +8,6 @@ public interface SignUpPresenter {
 
     void createAccountSuccess();
     void createAccountError();
-//    Context getContext();
+    Context getContext();
 
 }
