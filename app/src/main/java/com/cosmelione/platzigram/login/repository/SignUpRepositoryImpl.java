@@ -45,7 +45,8 @@ public class SignUpRepositoryImpl implements SignUpRepository {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            firebaseFirestore.collection("users").document(firebaseAuth.getCurrentUser().getUid())
+                            signUpPresenter.createAccountSuccess();
+                            /*firebaseFirestore.collection("users").document(firebaseAuth.getCurrentUser().getUid())
                                     .set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -57,7 +58,7 @@ public class SignUpRepositoryImpl implements SignUpRepository {
                                         signUpPresenter.createAccountError();
                                     }
                                 }
-                            });
+                            });*/
 
                         }
                         else {
